@@ -5,6 +5,9 @@ var passLength = "How long would you like your password?"
 
 var passMin = 8
 var passMax = 128
+var num = "1234567890"
+var charLow = "abcdefghijklmnopqrstuvwxyz"
+var charHigh = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 // Write password to the #password input
 function writePassword() {
