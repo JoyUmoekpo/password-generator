@@ -1,6 +1,6 @@
 var chars = ["1234567890", ",./!@#$%^&*", "abcdefghijklmnopqrstuvwxyz", "ABCDEFGHIJKLMNOPQRSTUWXYZ"];
-var password ="";
-var insertUser ="";
+var password = "";
+var insertUser = "";
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
