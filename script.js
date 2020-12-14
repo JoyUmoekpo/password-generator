@@ -8,6 +8,7 @@ var passMax = 128
 var num = "1234567890"
 var charLow = "abcdefghijklmnopqrstuvwxyz"
 var charHigh = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var specChar = "!@#$%^&*()_-+<>?;:'{}[]"
 
 // Write password to the #password input
 function writePassword() {
