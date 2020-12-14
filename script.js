@@ -5,11 +5,17 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+}
 
+function generatePassword() {
+  var insertUser = 0
+  if (insertUser <8 || insertUser > 128) {
+    insertUser = parseInt(prompt("How long would you like your password?"))
+  }
 }
 
 // Add event listener to generate button
