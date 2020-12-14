@@ -12,7 +12,6 @@ var specChar = "!@#$%^&*()_-+<>?;:'{}[]"
 
 // Write password to the #password input
 function writePassword() {
-
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -20,6 +19,7 @@ function writePassword() {
 
 }
 
-alert(hello)
-prompt(passLength)
 generateBtn.addEventListener("click", writePassword);
+
+alert(hello)
+Number(prompt(passLength))
