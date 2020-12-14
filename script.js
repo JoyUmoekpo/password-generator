@@ -14,7 +14,15 @@ function generatePassword() {
 
 function insertNumUser() {
   var passLength = prompt("How long would you like your password? (between 8 and 128 characters)")
+
+  if (passLength < 8 || passLength > 128 || passLength === "") {
+    alert("Password can only be between 8 and 128 characters in length.")
+  }
+
+  passLength = Math.floor(Number(passLength))
+
 }
+
 
 function insertCharUser() {
   
