@@ -2,20 +2,23 @@ var numbs = '1234567890'
 var specs = './!@#$%^&*' 
 var lowers = 'abcdefghijklmnopqrstuvwxyz' 
 var uppers = 'ABCDEFGHIJKLMNOPQRSTUWXYZ'
+
 var password = "";
 var insertUser = "";
 
 function generatePassword() {
-  password ="";
-  var insertUser = 0
-  if (insertUser <8 || insertUser > 128) {
-    insertUser = parseInt(prompt("How long would you like your password?"))
-  }
-  for (var i = 0; i < insertUser; i++) {
-    password += chars.charAt(Math.floor(Math.random() * insertUser));
+  password = "";
+  var passLength = insertNumUser();
+  var chars = insertCharUser();
 }
 
+function insertNumUser() {
+  var passLength = prompt("How long would you like your password? (between 8 and 128 characters)")
+}
 
+function insertCharUser() {
+  
+}
 
 var generateBtn = document.querySelector("#generate");
 
@@ -27,4 +30,3 @@ function writePassword() {
 }
 
 generateBtn.addEventListener("click", writePassword);
-}
