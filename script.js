@@ -1,15 +1,6 @@
-var chars = ["1234567890", ",./!@#$%^&*", "abcdefghijklmnopqrstuvwxyz", "ABCDEFGHIJKLMNOPQRSTUWXYZ"];
+var chars = ['1234567890', ',./!@#$%^&*', 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUWXYZ'];
 var password = "";
 var insertUser = "";
-var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-function writePassword() {
-  password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-}
 
 function generatePassword() {
   var insertUser = 0
@@ -18,5 +9,13 @@ function generatePassword() {
   }
 }
 
-// Add event listener to generate button
+var generateBtn = document.querySelector("#generate");
+
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+}
+
 generateBtn.addEventListener("click", writePassword);
