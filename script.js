@@ -1,6 +1,6 @@
 var password = "";
 
-var generatePassword = function() {
+function generatePassword() {
   password = "";
   var passwordLeng = insertNumUser();
 
@@ -14,7 +14,7 @@ var generatePassword = function() {
   return password;
 };
 
-var insertNumUser = function() {
+function insertNumUser() {
   var passLength = prompt("How long would you like your password? (between 8 and 128 characters)");
 
   if (passLength < 8 || passLength > 128 || passLength === "") {
@@ -27,7 +27,7 @@ var insertNumUser = function() {
   return passLength;
 }
 
-var insertCharUser = function() {
+function insertCharUser() {
   var passwordChar = "";
 
   var numbs = "1234567890";
