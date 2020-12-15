@@ -1,1 +1,3 @@
 For this week, I will use JavaScript elements to create an application that allows an employee to generate a random password. This application will use Javascript, HTML, and CSS elements to run. The password generator will prompt the user for password criteria including the password's length and character types. After the prompts are answered, a password will be generated in the form of an alert.
+
+https://joyumoekpo.github.io/password-generator/
